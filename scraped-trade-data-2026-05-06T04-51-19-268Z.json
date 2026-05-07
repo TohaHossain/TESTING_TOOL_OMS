@@ -1,0 +1,419 @@
+{
+  "orderList": {
+    "buy": {
+      "boCode": "10",
+      "tradingCode": "GP",
+      "pricingType": "Limit",
+      "qty": "10",
+      "type": "Buy",
+      "price": "15,000.00",
+      "time": "0",
+      "execQty": "",
+      "execRate": "",
+      "execAmount": "",
+      "transactTime": "10:47:33.945 AM",
+      "exchange": "",
+      "orderStatus": "Submitted",
+      "execType": "",
+      "rawText": "10 A GP Buy Limit 10 15,000.00 Submitted 06-May-2026 10:47:33.945 AM 10:47:33.945 AM 0",
+      "cells": [
+        "10",
+        "A",
+        "GP",
+        "Buy",
+        "Limit",
+        "10",
+        "15,000.00",
+        "Submitted",
+        "06-May-2026 10:47:33.945 AM",
+        "10:47:33.945 AM",
+        "0"
+      ]
+    },
+    "sell": {}
+  },
+  "marketDepth": {
+    "buy": {
+      "widgetName": "Market Depth",
+      "timestamp": "2026-05-06T04:48:45.312Z",
+      "rowIndex": 2,
+      "rowText": "2 15,000.00",
+      "cells": [
+        "2",
+        "15,000.00"
+      ],
+      "rawText": "2 15,000.00",
+      "tradingCode": "GP",
+      "bidPrice": 15000,
+      "bidQuantity": 2,
+      "askPrice": 15000,
+      "askQuantity": 2,
+      "marketType": "PUBLIC",
+      "lastTradedPrice": "",
+      "volume": "",
+      "tradeCount": "",
+      "vwap": ""
+    },
+    "sell": {}
+  },
+  "timeAndSales": {
+    "buy": {},
+    "sell": {},
+    "rows": []
+  },
+  "sharePrice": {
+    "row": {},
+    "rows": [],
+    "matchedTimes": [],
+    "rawRows": []
+  },
+  "workflow": {
+    "beforeBuy": {
+      "marketDepth": {
+        "timestamp": "2026-05-06T04:46:51.831Z",
+        "totalRows": 0,
+        "rows": [],
+        "summary": {
+          "totalRows": 0,
+          "gpRows": 0,
+          "boCodeRows": null,
+          "matchingRows": null,
+          "firstRow": null,
+          "firstPrice": null,
+          "firstQuantity": null
+        },
+        "expectedOrder": {
+          "orderType": "BUY",
+          "boCode": "10",
+          "tradingCode": "GP",
+          "stockExchange": "DSE",
+          "marketType": "PUBLIC",
+          "quantity": 10,
+          "price": 15000,
+          "displayQuantity": 2
+        }
+      }
+    },
+    "afterBuy": {
+      "marketDepth": {
+        "timestamp": "2026-05-06T04:48:44.676Z",
+        "totalRows": 1,
+        "rows": [
+          {
+            "widgetName": "Market Depth",
+            "timestamp": "2026-05-06T04:48:44.284Z",
+            "rowIndex": 2,
+            "rowText": "2 15,000.00",
+            "cells": [
+              "2",
+              "15,000.00"
+            ],
+            "rawText": "2 15,000.00",
+            "tradingCode": "GP",
+            "bidPrice": 15000,
+            "bidQuantity": 2,
+            "askPrice": 15000,
+            "askQuantity": 2,
+            "marketType": "PUBLIC",
+            "lastTradedPrice": "",
+            "volume": "",
+            "tradeCount": "",
+            "vwap": ""
+          }
+        ],
+        "summary": {
+          "totalRows": 1,
+          "gpRows": 1,
+          "boCodeRows": null,
+          "matchingRows": null,
+          "firstRow": "2 15,000.00",
+          "firstPrice": 15000,
+          "firstQuantity": 2
+        },
+        "expectedOrder": {
+          "orderType": "Buy",
+          "boCode": "10",
+          "stockExchange": "DSE",
+          "tradingCode": "GP",
+          "quantity": "10",
+          "price": "15000",
+          "priceType": "Limit",
+          "displayQuantity": "2"
+        }
+      },
+      "orderList": {
+        "timestamp": "2026-05-06T04:48:44.970Z",
+        "totalRows": 5,
+        "rows": [
+          {
+            "widgetName": "Order List",
+            "timestamp": "2026-05-06T04:48:44.676Z",
+            "rowIndex": 2,
+            "rowText": "10 A GP Buy Limit 10 15,000.00 Submitted 06-May-2026 10:47:33.945 AM 10:47:33.945 AM 0",
+            "cells": [
+              "10",
+              "A",
+              "GP",
+              "Buy",
+              "Limit",
+              "10",
+              "15,000.00",
+              "Submitted",
+              "06-May-2026 10:47:33.945 AM",
+              "10:47:33.945 AM",
+              "0"
+            ],
+            "rawText": "10 A GP Buy Limit 10 15,000.00 Submitted 06-May-2026 10:47:33.945 AM 10:47:33.945 AM 0",
+            "boCode": "10",
+            "tradingCode": "GP",
+            "side": "BUY",
+            "quantity": 10,
+            "price": "15,000.00",
+            "pricingType": "Limit",
+            "orderStatus": "Submitted",
+            "time": "0",
+            "execQty": "",
+            "execRate": "",
+            "orderId": null,
+            "qty": "10",
+            "type": "Buy",
+            "status": "Submitted",
+            "execAmount": "",
+            "transactTime": "10:47:33.945 AM",
+            "exchange": "",
+            "execType": ""
+          },
+          {
+            "widgetName": "Order List",
+            "timestamp": "2026-05-06T04:48:44.676Z",
+            "rowIndex": 3,
+            "rowText": "10 A GP Buy Limit 10 15,000.00 Executed 06-May-2026 10:41:23.082 AM 10:41:23.082 AM 10",
+            "cells": [
+              "10",
+              "A",
+              "GP",
+              "Buy",
+              "Limit",
+              "10",
+              "15,000.00",
+              "Executed",
+              "06-May-2026 10:41:23.082 AM",
+              "10:41:23.082 AM",
+              "10"
+            ],
+            "rawText": "10 A GP Buy Limit 10 15,000.00 Executed 06-May-2026 10:41:23.082 AM 10:41:23.082 AM 10",
+            "boCode": "10",
+            "tradingCode": "GP",
+            "side": "BUY",
+            "quantity": 10,
+            "price": "15,000.00",
+            "pricingType": "Limit",
+            "orderStatus": "Executed",
+            "time": "10",
+            "execQty": "",
+            "execRate": "",
+            "orderId": null,
+            "qty": "10",
+            "type": "Buy",
+            "status": "Executed",
+            "execAmount": "",
+            "transactTime": "10:41:23.082 AM",
+            "exchange": "",
+            "execType": ""
+          },
+          {
+            "widgetName": "Order List",
+            "timestamp": "2026-05-06T04:48:44.676Z",
+            "rowIndex": 4,
+            "rowText": "10 A GP Buy Limit 4 15,000.00 Executed 06-May-2026 10:31:33.296 AM 10:31:33.296 AM 4",
+            "cells": [
+              "10",
+              "A",
+              "GP",
+              "Buy",
+              "Limit",
+              "4",
+              "15,000.00",
+              "Executed",
+              "06-May-2026 10:31:33.296 AM",
+              "10:31:33.296 AM",
+              "4"
+            ],
+            "rawText": "10 A GP Buy Limit 4 15,000.00 Executed 06-May-2026 10:31:33.296 AM 10:31:33.296 AM 4",
+            "boCode": "10",
+            "tradingCode": "GP",
+            "side": "BUY",
+            "quantity": 4,
+            "price": "15,000.00",
+            "pricingType": "Limit",
+            "orderStatus": "Executed",
+            "time": "4",
+            "execQty": "",
+            "execRate": "",
+            "orderId": null,
+            "qty": "4",
+            "type": "Buy",
+            "status": "Executed",
+            "execAmount": "",
+            "transactTime": "10:31:33.296 AM",
+            "exchange": "",
+            "execType": ""
+          },
+          {
+            "widgetName": "Order List",
+            "timestamp": "2026-05-06T04:48:44.676Z",
+            "rowIndex": 5,
+            "rowText": "10 A GP Buy Limit 10 15,000.00 Executed 06-May-2026 10:30:31.390 AM 10:30:31.390 AM 10",
+            "cells": [
+              "10",
+              "A",
+              "GP",
+              "Buy",
+              "Limit",
+              "10",
+              "15,000.00",
+              "Executed",
+              "06-May-2026 10:30:31.390 AM",
+              "10:30:31.390 AM",
+              "10"
+            ],
+            "rawText": "10 A GP Buy Limit 10 15,000.00 Executed 06-May-2026 10:30:31.390 AM 10:30:31.390 AM 10",
+            "boCode": "10",
+            "tradingCode": "GP",
+            "side": "BUY",
+            "quantity": 10,
+            "price": "15,000.00",
+            "pricingType": "Limit",
+            "orderStatus": "Executed",
+            "time": "10",
+            "execQty": "",
+            "execRate": "",
+            "orderId": null,
+            "qty": "10",
+            "type": "Buy",
+            "status": "Executed",
+            "execAmount": "",
+            "transactTime": "10:30:31.390 AM",
+            "exchange": "",
+            "execType": ""
+          },
+          {
+            "widgetName": "Order List",
+            "timestamp": "2026-05-06T04:48:44.676Z",
+            "rowIndex": 6,
+            "rowText": "10 A GP Buy Limit 10 15,000.00 Executed 06-May-2026 10:29:59.079 AM 10:29:59.079 AM 10",
+            "cells": [
+              "10",
+              "A",
+              "GP",
+              "Buy",
+              "Limit",
+              "10",
+              "15,000.00",
+              "Executed",
+              "06-May-2026 10:29:59.079 AM",
+              "10:29:59.079 AM",
+              "10"
+            ],
+            "rawText": "10 A GP Buy Limit 10 15,000.00 Executed 06-May-2026 10:29:59.079 AM 10:29:59.079 AM 10",
+            "boCode": "10",
+            "tradingCode": "GP",
+            "side": "BUY",
+            "quantity": 10,
+            "price": "15,000.00",
+            "pricingType": "Limit",
+            "orderStatus": "Executed",
+            "time": "10",
+            "execQty": "",
+            "execRate": "",
+            "orderId": null,
+            "qty": "10",
+            "type": "Buy",
+            "status": "Executed",
+            "execAmount": "",
+            "transactTime": "10:29:59.079 AM",
+            "exchange": "",
+            "execType": ""
+          }
+        ],
+        "summary": {
+          "totalRows": 5,
+          "gpRows": 5,
+          "boCodeRows": null,
+          "matchingRows": null,
+          "firstRow": "10 A GP Buy Limit 10 15,000.00 Submitted 06-May-2026 10:47:33.945 AM 10:47:33.945 AM 0",
+          "firstPrice": 15000,
+          "firstQuantity": 10
+        },
+        "side": "buy",
+        "expectedOrder": {
+          "orderType": "Buy",
+          "boCode": "10",
+          "stockExchange": "DSE",
+          "tradingCode": "GP",
+          "quantity": "10",
+          "price": "15000",
+          "priceType": "Limit",
+          "displayQuantity": "2"
+        }
+      }
+    },
+    "beforeSell": {
+      "marketDepth": {
+        "timestamp": "2026-05-06T04:49:06.252Z",
+        "totalRows": 1,
+        "rows": [
+          {
+            "widgetName": "Market Depth",
+            "timestamp": "2026-05-06T04:49:05.766Z",
+            "rowIndex": 2,
+            "rowText": "2 15,000.00",
+            "cells": [
+              "2",
+              "15,000.00"
+            ],
+            "rawText": "2 15,000.00",
+            "tradingCode": "GP",
+            "bidPrice": 15000,
+            "bidQuantity": 2,
+            "askPrice": 15000,
+            "askQuantity": 2,
+            "marketType": "PUBLIC",
+            "lastTradedPrice": "",
+            "volume": "",
+            "tradeCount": "",
+            "vwap": ""
+          }
+        ],
+        "summary": {
+          "totalRows": 1,
+          "gpRows": 1,
+          "boCodeRows": null,
+          "matchingRows": null,
+          "firstRow": "2 15,000.00",
+          "firstPrice": 15000,
+          "firstQuantity": 2
+        },
+        "expectedOrder": {
+          "orderType": "SELL",
+          "boCode": "100",
+          "tradingCode": "GP",
+          "stockExchange": "DSE",
+          "marketType": "PUBLIC",
+          "quantity": 10,
+          "price": 15000,
+          "displayQuantity": 2
+        }
+      }
+    },
+    "afterSell": {
+      "marketDepth": {},
+      "orderList": {}
+    },
+    "final": {
+      "orderList": {},
+      "timeAndSales": {},
+      "sharePrice": {}
+    }
+  }
+}

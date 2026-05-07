@@ -1,0 +1,629 @@
+[
+  {
+    "timestamp": "2026-05-07T06:41:07.089Z",
+    "phase": "PRE-BUY",
+    "widgetName": "Market Depth",
+    "validationName": "beforeBuy snapshot captured",
+    "expected": "Snapshot rows captured",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth beforeBuy snapshot was captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:06.280Z",
+    "phase": "BUY",
+    "widgetName": "Market Depth",
+    "validationName": "afterBuy snapshot captured",
+    "expected": "Snapshot rows captured",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth afterBuy snapshot was captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:06.784Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "afterBuy snapshot captured",
+    "expected": "Snapshot rows captured",
+    "actual": 12,
+    "status": "PASS",
+    "message": "Order List afterBuy snapshot was captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.313Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "BUY wrong BO Code check",
+    "expected": "Not 100",
+    "actual": "10",
+    "status": "PASS",
+    "message": "Order List did not show the opposite BO Code."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.313Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "BUY exact Order List row presence",
+    "expected": {
+      "orderType": "Buy",
+      "boCode": "10",
+      "stockExchange": "DSE",
+      "tradingCode": "GP",
+      "quantity": "10",
+      "price": "15000",
+      "priceType": "Limit",
+      "displayQuantity": "2"
+    },
+    "actual": {
+      "matchScore": 115,
+      "row": {
+        "boCode": "10",
+        "tradingCode": "GP",
+        "pricingType": "Limit",
+        "qty": "10",
+        "type": "Buy",
+        "price": "15,000.00",
+        "time": "12:41:57.591 PM",
+        "execQty": "",
+        "execRate": "",
+        "execAmount": "",
+        "transactTime": "12:41:57.591 PM",
+        "exchange": "",
+        "orderStatus": "Submitted",
+        "execType": "",
+        "rawText": "10 A GP Buy Limit 10 15,000.00 Submitted 07-May-2026 12:41:57.591 PM 12:41:57.591 PM",
+        "cells": [
+          "10",
+          "A",
+          "GP",
+          "Buy",
+          "Limit",
+          "10",
+          "15,000.00",
+          "Submitted",
+          "07-May-2026 12:41:57.591 PM",
+          "12:41:57.591 PM"
+        ]
+      }
+    },
+    "status": "PASS",
+    "message": "Order List row matched to the BUY placed order."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.313Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "BO Code matches Place Order",
+    "expected": "10",
+    "actual": "10",
+    "status": "PASS",
+    "message": "BO Code matches Place Order matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.313Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "Trading Code matches Place Order",
+    "expected": "GP",
+    "actual": "GP",
+    "status": "PASS",
+    "message": "Trading Code matches Place Order matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.313Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "Pricing Type matches Place Order Price Type",
+    "expected": "Limit",
+    "actual": "Limit",
+    "status": "PASS",
+    "message": "Pricing Type matches Place Order Price Type matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.313Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "Qty matches Place Order Quantity",
+    "expected": "10",
+    "actual": "10",
+    "status": "PASS",
+    "message": "Qty matches Place Order Quantity matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.314Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "Type matches Place Order Order Type",
+    "expected": "Buy",
+    "actual": "Buy",
+    "status": "PASS",
+    "message": "Type matches Place Order Order Type matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.314Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "Price matches Place Order Price",
+    "expected": "15000",
+    "actual": "15,000.00",
+    "status": "PASS",
+    "message": "Price matches Place Order Price matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.314Z",
+    "phase": "BUY",
+    "widgetName": "Order List",
+    "validationName": "BUY execution fields captured",
+    "expected": [
+      "Time",
+      "Exec Qty",
+      "Exec Rate",
+      "Exec Amount",
+      "Transact Time"
+    ],
+    "actual": {
+      "time": "12:41:57.591 PM",
+      "execQty": "",
+      "execRate": "",
+      "execAmount": "",
+      "transactTime": "12:41:57.591 PM",
+      "orderStatus": "Submitted"
+    },
+    "status": "PASS",
+    "message": "Order List execution-related fields captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.641Z",
+    "phase": "BUY",
+    "widgetName": "Market Depth",
+    "validationName": "BUY Trading Code GP visible",
+    "expected": "GP",
+    "actual": "GP",
+    "status": "PASS",
+    "message": "Market Depth shows GP after filtering."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.641Z",
+    "phase": "BUY",
+    "widgetName": "Market Depth",
+    "validationName": "Market Type matches PUBLIC",
+    "expected": "PUBLIC",
+    "actual": "PUBLIC",
+    "status": "PASS",
+    "message": "Market Type matches PUBLIC matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.641Z",
+    "phase": "BUY",
+    "widgetName": "Market Depth",
+    "validationName": "BUY baseline snapshot before order",
+    "expected": "Snapshot available before order placement",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth baseline snapshot was saved before placing the order."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.641Z",
+    "phase": "BUY",
+    "widgetName": "Market Depth",
+    "validationName": "BUY snapshot after order",
+    "expected": "Snapshot available after order placement",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth snapshot was saved after placing the order."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.641Z",
+    "phase": "BUY",
+    "widgetName": "Cross Widget",
+    "validationName": "BUY Market Depth changed after order",
+    "expected": "Before/after Market Depth relation should show a visible transition",
+    "actual": {
+      "changed": true,
+      "beforeFirstRow": "15,200.00 10",
+      "afterFirstRow": "2 15,000.00 15,200.00 10"
+    },
+    "status": "PASS",
+    "message": "Market Depth changed between the baseline and post-order snapshots."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:07.642Z",
+    "phase": "BUY",
+    "widgetName": "Cross Widget",
+    "validationName": "BUY Order List and Market Depth flow relation",
+    "expected": "Order List confirms the order while Market Depth reflects post-order state",
+    "actual": {
+      "orderListPresent": true,
+      "marketDepthGpRows": 1,
+      "marketDepthRows": 1
+    },
+    "status": "PASS",
+    "message": "Order List and Market Depth show a reasonable post-order flow relation."
+  },
+  {
+    "timestamp": "2026-05-07T06:43:27.986Z",
+    "phase": "PRE-SELL",
+    "widgetName": "Market Depth",
+    "validationName": "beforeSell snapshot captured",
+    "expected": "Snapshot rows captured",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth beforeSell snapshot was captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:07.584Z",
+    "phase": "SELL",
+    "widgetName": "Market Depth",
+    "validationName": "afterSell snapshot captured",
+    "expected": "Snapshot rows captured",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth afterSell snapshot was captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.102Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "afterSell snapshot captured",
+    "expected": "Snapshot rows captured",
+    "actual": 11,
+    "status": "PASS",
+    "message": "Order List afterSell snapshot was captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.535Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "SELL wrong BO Code check",
+    "expected": "Not 10",
+    "actual": "100",
+    "status": "PASS",
+    "message": "Order List did not show the opposite BO Code."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.535Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "SELL exact Order List row presence",
+    "expected": {
+      "orderType": "Sell",
+      "boCode": "100",
+      "stockExchange": "DSE",
+      "tradingCode": "GP",
+      "quantity": "10",
+      "price": "15000",
+      "priceType": "Limit",
+      "displayQuantity": "2"
+    },
+    "actual": {
+      "matchScore": 115,
+      "row": {
+        "boCode": "100",
+        "tradingCode": "GP",
+        "pricingType": "Limit",
+        "qty": "10",
+        "type": "Sell",
+        "price": "15,000.00",
+        "time": "12:44:10.208 PM",
+        "execQty": "10",
+        "execRate": "15,000.00",
+        "execAmount": "",
+        "transactTime": "12:44:10.208 PM",
+        "exchange": "",
+        "orderStatus": "Executed",
+        "execType": "",
+        "rawText": "100 A GP Sell Limit 10 15,000.00 Executed 07-May-2026 12:44:10.208 PM 12:44:10.208 PM",
+        "cells": [
+          "100",
+          "A",
+          "GP",
+          "Sell",
+          "Limit",
+          "10",
+          "15,000.00",
+          "Executed",
+          "07-May-2026 12:44:10.208 PM",
+          "12:44:10.208 PM"
+        ]
+      }
+    },
+    "status": "PASS",
+    "message": "Order List row matched to the SELL placed order."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.535Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "BO Code matches Place Order",
+    "expected": "100",
+    "actual": "100",
+    "status": "PASS",
+    "message": "BO Code matches Place Order matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.536Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "Trading Code matches Place Order",
+    "expected": "GP",
+    "actual": "GP",
+    "status": "PASS",
+    "message": "Trading Code matches Place Order matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.536Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "Pricing Type matches Place Order Price Type",
+    "expected": "Limit",
+    "actual": "Limit",
+    "status": "PASS",
+    "message": "Pricing Type matches Place Order Price Type matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.536Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "Qty matches Place Order Quantity",
+    "expected": "10",
+    "actual": "10",
+    "status": "PASS",
+    "message": "Qty matches Place Order Quantity matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.536Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "Type matches Place Order Order Type",
+    "expected": "Sell",
+    "actual": "Sell",
+    "status": "PASS",
+    "message": "Type matches Place Order Order Type matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.536Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "Price matches Place Order Price",
+    "expected": "15000",
+    "actual": "15,000.00",
+    "status": "PASS",
+    "message": "Price matches Place Order Price matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.536Z",
+    "phase": "SELL",
+    "widgetName": "Order List",
+    "validationName": "SELL execution fields captured",
+    "expected": [
+      "Time",
+      "Exec Qty",
+      "Exec Rate",
+      "Exec Amount",
+      "Transact Time"
+    ],
+    "actual": {
+      "time": "12:44:10.208 PM",
+      "execQty": "10",
+      "execRate": "15,000.00",
+      "execAmount": "",
+      "transactTime": "12:44:10.208 PM",
+      "orderStatus": "Executed"
+    },
+    "status": "PASS",
+    "message": "Order List execution-related fields captured."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.867Z",
+    "phase": "SELL",
+    "widgetName": "Market Depth",
+    "validationName": "SELL Trading Code GP visible",
+    "expected": "GP",
+    "actual": "GP",
+    "status": "PASS",
+    "message": "Market Depth shows GP after filtering."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.867Z",
+    "phase": "SELL",
+    "widgetName": "Market Depth",
+    "validationName": "Market Type matches PUBLIC",
+    "expected": "PUBLIC",
+    "actual": "PUBLIC",
+    "status": "PASS",
+    "message": "Market Type matches PUBLIC matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.868Z",
+    "phase": "SELL",
+    "widgetName": "Market Depth",
+    "validationName": "SELL baseline snapshot before order",
+    "expected": "Snapshot available before order placement",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth baseline snapshot was saved before placing the order."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.868Z",
+    "phase": "SELL",
+    "widgetName": "Market Depth",
+    "validationName": "SELL snapshot after order",
+    "expected": "Snapshot available after order placement",
+    "actual": 1,
+    "status": "PASS",
+    "message": "Market Depth snapshot was saved after placing the order."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.868Z",
+    "phase": "SELL",
+    "widgetName": "Cross Widget",
+    "validationName": "SELL Market Depth changed after order",
+    "expected": "Before/after Market Depth relation should show a visible transition",
+    "actual": {
+      "changed": true,
+      "beforeFirstRow": "2 15,000.00 15,200.00 10",
+      "afterFirstRow": "15,200.00 10"
+    },
+    "status": "PASS",
+    "message": "Market Depth changed between the baseline and post-order snapshots."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:08.868Z",
+    "phase": "SELL",
+    "widgetName": "Cross Widget",
+    "validationName": "SELL Order List and Market Depth flow relation",
+    "expected": "Order List confirms the order while Market Depth reflects post-order state",
+    "actual": {
+      "orderListPresent": true,
+      "marketDepthGpRows": 1,
+      "marketDepthRows": 1
+    },
+    "status": "PASS",
+    "message": "Order List and Market Depth show a reasonable post-order flow relation."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:35.219Z",
+    "phase": "FINAL",
+    "widgetName": "Time and Sales",
+    "validationName": "Time and Sales rows available",
+    "expected": "At least one visible row",
+    "actual": 22,
+    "status": "PASS",
+    "message": "Time and Sales rows were scraped successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:35.219Z",
+    "phase": "BUY",
+    "widgetName": "Time and Sales",
+    "validationName": "BUY execution data ready",
+    "expected": "Executed quantity/rate in Order List",
+    "actual": {
+      "execQty": "",
+      "execRate": "",
+      "orderStatus": "Submitted"
+    },
+    "status": "WARN",
+    "message": "Order List does not show execution data yet, so Time and Sales comparison was skipped."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:35.220Z",
+    "phase": "SELL",
+    "widgetName": "Time and Sales",
+    "validationName": "Time matches Order List Transact Time",
+    "expected": "12:44:10.208 PM",
+    "actual": "12:44:10 PM",
+    "status": "PASS",
+    "message": "Time matches Order List Transact Time matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:35.220Z",
+    "phase": "SELL",
+    "widgetName": "Time and Sales",
+    "validationName": "Exec Price matches Order List Exec Rate",
+    "expected": "15,000.00",
+    "actual": "15,000.00",
+    "status": "PASS",
+    "message": "Exec Price matches Order List Exec Rate matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:35.220Z",
+    "phase": "SELL",
+    "widgetName": "Time and Sales",
+    "validationName": "Aggregated Volume matches Order List Exec Qty",
+    "expected": "10",
+    "actual": 10,
+    "status": "PASS",
+    "message": "Aggregated Volume matches Order List Exec Qty matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:35.220Z",
+    "phase": "SELL",
+    "widgetName": "Time and Sales",
+    "validationName": "Cumulative Volume delta matches Order List Exec Qty",
+    "expected": "10",
+    "actual": 8,
+    "status": "WARN",
+    "message": "Cumulative Volume delta matches Order List Exec Qty mismatch detected."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:35.220Z",
+    "phase": "FINAL",
+    "widgetName": "Cross Widget",
+    "validationName": "Market Depth returned to pre-BUY baseline after SELL",
+    "expected": {
+      "beforeBuyRows": 1,
+      "beforeBuyFirstRow": "15,200.00 10",
+      "beforeBuyFirstPrice": 15200,
+      "beforeBuyFirstQuantity": 15200
+    },
+    "actual": {
+      "afterSellRows": 1,
+      "afterSellFirstRow": "15,200.00 10",
+      "afterSellFirstPrice": 15200,
+      "afterSellFirstQuantity": 15200
+    },
+    "status": "PASS",
+    "message": "Market Depth after SELL aligned with the pre-BUY baseline."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:44.290Z",
+    "phase": "FINAL",
+    "widgetName": "Share Price",
+    "validationName": "Trading Code matches GP",
+    "expected": "GP",
+    "actual": "GP",
+    "status": "PASS",
+    "message": "Trading Code matches GP matched successfully."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:44.290Z",
+    "phase": "FINAL",
+    "widgetName": "Share Price",
+    "validationName": "LT Time matches Order List Time",
+    "expected": [
+      "12:41:57.591 PM",
+      "12:44:10.208 PM"
+    ],
+    "actual": "12:44:10 PM",
+    "status": "PASS",
+    "message": "Share Price LT Time matched at least one saved Order List time."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:44.291Z",
+    "phase": "FINAL",
+    "widgetName": "Share Price",
+    "validationName": "LTP aligns with saved trade price",
+    "expected": [
+      "15,000.00",
+      "15000",
+      "15000"
+    ],
+    "actual": "15,000.00",
+    "status": "PASS",
+    "message": "Share Price LTP aligned with saved trade price."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:44.291Z",
+    "phase": "FINAL",
+    "widgetName": "Cross Widget",
+    "validationName": "Share Price LT Time aligns with Time and Sales",
+    "expected": [
+      "12:44:10 PM"
+    ],
+    "actual": "12:44:10 PM",
+    "status": "PASS",
+    "message": "Share Price LT Time matched a saved Time and Sales time."
+  },
+  {
+    "timestamp": "2026-05-07T06:45:44.291Z",
+    "phase": "FINAL",
+    "widgetName": "Cross Widget",
+    "validationName": "Share Price LTP aligns with Time and Sales Exec Price",
+    "expected": [
+      "15,000.00"
+    ],
+    "actual": "15,000.00",
+    "status": "PASS",
+    "message": "Share Price LTP aligned with Time and Sales exec price."
+  }
+]
